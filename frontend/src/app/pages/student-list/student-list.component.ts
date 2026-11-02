@@ -341,7 +341,7 @@ import { ConfirmModalComponent } from '../../components/confirm-modal/confirm-mo
         outline: none;
         border-color: var(--primary);
         background-color: #FFFFFF;
-        box-shadow: 0 0 0 3px rgba(164, 120, 90, 0.15);
+        box-shadow: 0 0 0 3px rgba(81, 99, 86, 0.18);
       }
 
       &::placeholder {
@@ -395,7 +395,7 @@ import { ConfirmModalComponent } from '../../components/confirm-modal/confirm-mo
       color: var(--text-main);
       cursor: pointer;
       appearance: none;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238B5E3C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23516356' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
       background-repeat: no-repeat;
       background-position: right 0.75rem center;
       background-size: 14px;
@@ -404,7 +404,7 @@ import { ConfirmModalComponent } from '../../components/confirm-modal/confirm-mo
       &:focus {
         outline: none;
         border-color: var(--primary);
-        box-shadow: 0 0 0 3px rgba(164, 120, 90, 0.15);
+        box-shadow: 0 0 0 3px rgba(81, 99, 86, 0.18);
       }
     }
 
@@ -606,8 +606,8 @@ import { ConfirmModalComponent } from '../../components/confirm-modal/confirm-mo
       }
 
       &.edit:hover {
-        color: var(--accent-caramel);
-        background-color: #FAF5F0;
+        color: var(--accent-sage-text);
+        background-color: var(--accent-sage-light);
         border-color: var(--border-subtle);
       }
 

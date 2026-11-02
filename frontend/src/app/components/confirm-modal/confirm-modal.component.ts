@@ -69,7 +69,7 @@ import { Student } from '../../models/student.model';
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background-color: rgba(61, 40, 23, 0.45);
+      background-color: rgba(39, 51, 42, 0.45);
       backdrop-filter: blur(3px);
       z-index: 1000;
       display: flex;

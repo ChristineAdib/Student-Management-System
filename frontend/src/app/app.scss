@@ -31,7 +31,7 @@
 .sidebar-backdrop {
   position: fixed;
   inset: 0;
-  background-color: rgba(61, 40, 23, 0.45);
+  background-color: rgba(39, 51, 42, 0.45);
   backdrop-filter: blur(2px);
   z-index: 99;
 }
@@ -173,9 +173,9 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--success);
+  background-color: var(--accent-sage);
   flex-shrink: 0;
-  box-shadow: 0 0 0 2px rgba(122, 158, 126, 0.25);
+  box-shadow: 0 0 0 2px rgba(167, 184, 162, 0.4);
 }
 
 .status-meta {

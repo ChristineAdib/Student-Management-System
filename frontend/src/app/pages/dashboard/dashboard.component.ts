@@ -191,7 +191,7 @@ import { StudentStats } from '../../models/student.model';
 
     .welcome-banner {
       padding: 1.75rem 2rem;
-      background: linear-gradient(135deg, #FFFFFF 0%, #FAF7F2 100%);
+      background: linear-gradient(135deg, #FFFFFF 0%, #F7F2E8 100%);
       border: 1px solid var(--border-color);
       display: flex;
       align-items: center;
@@ -206,19 +206,19 @@ import { StudentStats } from '../../models/student.model';
       gap: 0.5rem;
       padding: 0.25rem 0.75rem;
       border-radius: var(--radius-full);
-      background-color: var(--success-bg);
-      color: var(--success-text);
+      background-color: var(--accent-sage-light);
+      color: var(--accent-sage-text);
       font-size: 0.75rem;
       font-weight: 600;
       margin-bottom: 0.75rem;
-      border: 1px solid rgba(122, 158, 126, 0.3);
+      border: 1px solid rgba(167, 184, 162, 0.4);
     }
 
     .pulse-dot {
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: var(--success);
+      background-color: var(--accent-sage);
     }
 
     .banner-title {
@@ -387,7 +387,7 @@ import { StudentStats } from '../../models/student.model';
 
     .dept-bar-fill {
       height: 100%;
-      background-color: var(--primary);
+      background-color: var(--accent-sage);
       border-radius: var(--radius-full);
       transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }

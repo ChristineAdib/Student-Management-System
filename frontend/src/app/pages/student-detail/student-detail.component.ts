@@ -192,10 +192,11 @@ import { ConfirmModalComponent } from '../../components/confirm-modal/confirm-mo
 
     .profile-header {
       padding: 2rem;
-      background: linear-gradient(135deg, #FFFFFF 0%, #FAF7F2 100%);
+      background: linear-gradient(135deg, #FFFFFF 0%, #F7F2E8 100%);
       border-bottom: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 1.5rem;
       flex-wrap: wrap;
     }

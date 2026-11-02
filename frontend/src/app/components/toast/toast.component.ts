@@ -97,8 +97,8 @@ import { NotificationService } from '../../services/notification.service';
     }
 
     .toast-info {
-      border-left: 4px solid var(--accent-caramel);
-      .toast-icon { color: var(--accent-caramel); }
+      border-left: 4px solid var(--accent-sage);
+      .toast-icon { color: var(--accent-sage); }
     }
 
     .toast-content {

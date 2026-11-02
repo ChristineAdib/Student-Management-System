@@ -1,46 +1,49 @@
 :root {
-  /* Warm Academic Elegance Color Tokens */
-  --bg-app: #FAF7F2;          /* Ivory White */
-  --bg-secondary: #F1E3D5;    /* Cream Beige */
-  --bg-card: #FFFFFF;         /* Pure clean card surface */
-  --bg-card-subtle: #FDFBF7;  /* Light cream surface */
+  /* Sage & Forest Academic Palette Tokens */
+  --bg-app: #F7F2E8;          /* Ivory Linen (#F7F2E8) */
+  --bg-secondary: #EFE7D8;    /* Soft Warm Linen (#EFE7D8) */
+  --bg-card: #FFFFFF;         /* Crisp card surface */
+  --bg-card-subtle: #FAF6EE;  /* Subtle linen surface */
   
-  --border-color: #D9C3A8;     /* Sand */
-  --border-subtle: #EADBCC;   /* Light Sand */
+  --border-color: #D6CCBC;     /* Warm muted border */
+  --border-subtle: #E6DDCF;   /* Light linen border */
   
-  --primary: #A4785A;          /* Warm Brown */
-  --primary-hover: #8B5E3C;    /* Deep Brown hover */
-  --primary-active: #724729;   /* Darker warm brown */
-  --primary-light: #F7EFE8;    /* Warm brown tint */
+  --primary: #516356;          /* Deep Forest Slate (#516356) */
+  --primary-hover: #415146;    /* Darker forest */
+  --primary-active: #323F36;   /* Deepest forest */
+  --primary-light: #EBF0EC;    /* Soft forest tint */
   
-  --accent-caramel: #C9A078;   /* Caramel */
-  --accent-gold: #E7C27D;      /* Soft Gold */
-  --accent-gold-bg: #FCF7EE;   /* Soft Gold Tint */
-  --accent-gold-text: #7D5D18; /* Gold Deep text */
+  --accent-sage: #A7B8A2;      /* Sage Green (#A7B8A2) */
+  --accent-sage-light: #F1F5F0;/* Sage light tint */
+  --accent-sage-text: #374B3C; /* Sage high-contrast text */
+
+  --accent-gold: #D9BF8F;      /* Soft Ochre Gold */
+  --accent-gold-bg: #FAF5EB;   /* Gold tint */
+  --accent-gold-text: #6E5425; /* Gold text */
   
-  --success: #7A9E7E;          /* Sage Green */
-  --success-bg: #F1F6F2;       /* Sage Green Tint */
-  --success-text: #39543C;     /* Sage Deep text */
+  --success: #516356;          /* Deep Forest / Success indicator */
+  --success-bg: #EDF3EE;       /* Success Tint */
+  --success-text: #324937;     /* Success text */
   
-  --danger: #B2533E;           /* Warm Terracotta / Brick Red (Not Neon) */
+  --danger: #A34839;           /* Warm Terracotta Brick Red */
   --danger-bg: #FAF0EE;        /* Terracotta Tint */
-  --danger-text: #692215;      /* Terracotta text */
+  --danger-text: #66251A;      /* Terracotta text */
 
   /* Text hierarchy - STRICT NO BLACK */
-  --text-heading: #8B5E3C;     /* Deep Brown */
-  --text-main: #3D2817;        /* Rich Deep Umber (High Contrast) */
-  --text-muted: #6E5745;       /* Warm Muted Brown */
-  --text-subtle: #967E6C;      /* Subtle Sand Brown */
+  --text-heading: #516356;     /* Deep Forest Slate */
+  --text-main: #27332A;        /* Very Deep Slate Umber */
+  --text-muted: #57665B;       /* Muted Forest Slate */
+  --text-subtle: #809084;      /* Subtle Sage Slate */
 
   /* Typography */
   --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
   --font-serif: 'Fraunces', Georgia, serif;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(61, 40, 23, 0.05);
-  --shadow-md: 0 4px 12px rgba(61, 40, 23, 0.07);
-  --shadow-lg: 0 10px 25px rgba(61, 40, 23, 0.09);
-  --shadow-dropdown: 0 12px 32px rgba(61, 40, 23, 0.12);
+  --shadow-sm: 0 1px 3px rgba(39, 51, 42, 0.05);
+  --shadow-md: 0 4px 12px rgba(39, 51, 42, 0.07);
+  --shadow-lg: 0 10px 25px rgba(39, 51, 42, 0.09);
+  --shadow-dropdown: 0 12px 32px rgba(39, 51, 42, 0.12);
 
   /* Radius */
   --radius-sm: 6px;
@@ -97,7 +100,7 @@ input, select, textarea {
   color: var(--text-main);
 }
 
-/* Scrollbar Styling - Warm Academic */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -108,12 +111,12 @@ input, select, textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: var(--accent-sage);
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-caramel);
+  background: var(--primary);
 }
 
 /* Global button styles */
@@ -141,7 +144,7 @@ input, select, textarea {
   background-color: var(--primary);
   color: #FFFFFF;
   border-color: var(--primary);
-  box-shadow: 0 1px 2px rgba(61, 40, 23, 0.1);
+  box-shadow: 0 1px 2px rgba(39, 51, 42, 0.1);
 
   &:hover:not(:disabled) {
     background-color: var(--primary-hover);
@@ -163,7 +166,7 @@ input, select, textarea {
 
   &:hover:not(:disabled) {
     background-color: var(--bg-secondary);
-    border-color: var(--accent-caramel);
+    border-color: var(--accent-sage);
     color: var(--text-heading);
   }
 }
@@ -183,7 +186,7 @@ input, select, textarea {
 .btn-danger {
   background-color: var(--danger-bg);
   color: var(--danger-text);
-  border-color: rgba(178, 83, 62, 0.3);
+  border-color: rgba(163, 72, 57, 0.3);
 
   &:hover:not(:disabled) {
     background-color: var(--danger);
@@ -221,15 +224,15 @@ input, select, textarea {
 }
 
 .badge-sage {
-  background-color: var(--success-bg);
-  color: var(--success-text);
-  border: 1px solid rgba(122, 158, 126, 0.3);
+  background-color: var(--accent-sage-light);
+  color: var(--accent-sage-text);
+  border: 1px solid rgba(167, 184, 162, 0.5);
 }
 
 .badge-gold {
   background-color: var(--accent-gold-bg);
   color: var(--accent-gold-text);
-  border: 1px solid rgba(231, 194, 125, 0.4);
+  border: 1px solid rgba(217, 191, 143, 0.5);
 }
 
 .badge-cream {
@@ -240,8 +243,8 @@ input, select, textarea {
 
 .badge-warm {
   background-color: var(--primary-light);
-  color: var(--primary-hover);
-  border: 1px solid rgba(164, 120, 90, 0.25);
+  color: var(--primary);
+  border: 1px solid rgba(81, 99, 86, 0.25);
 }
 
 /* Cards */
