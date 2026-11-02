@@ -191,7 +191,7 @@ import { StudentStats } from '../../models/student.model';
 
     .welcome-banner {
       padding: 1.75rem 2rem;
-      background: linear-gradient(135deg, #FFFFFF 0%, #F7F2E8 100%);
+      background: linear-gradient(135deg, #FFFFFF 0%, #EDF3EF 100%);
       border: 1px solid var(--border-color);
       display: flex;
       align-items: center;
@@ -276,13 +276,13 @@ import { StudentStats } from '../../models/student.model';
       }
 
       &.gold {
-        background-color: var(--accent-gold-bg);
-        color: var(--accent-gold-text);
+        background-color: var(--accent-sage-light);
+        color: var(--primary);
       }
 
       &.sage {
-        background-color: var(--success-bg);
-        color: var(--success);
+        background-color: var(--bg-card-subtle);
+        color: var(--primary-hover);
       }
     }
 
@@ -381,7 +381,7 @@ import { StudentStats } from '../../models/student.model';
     .dept-bar-track {
       height: 7px;
       border-radius: var(--radius-full);
-      background-color: var(--bg-secondary);
+      background-color: var(--border-subtle);
       overflow: hidden;
     }
 

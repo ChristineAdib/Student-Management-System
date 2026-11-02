@@ -1,49 +1,45 @@
 :root {
-  /* Sage & Forest Academic Palette Tokens */
-  --bg-app: #F7F2E8;          /* Ivory Linen (#F7F2E8) */
-  --bg-secondary: #EFE7D8;    /* Soft Warm Linen (#EFE7D8) */
-  --bg-card: #FFFFFF;         /* Crisp card surface */
-  --bg-card-subtle: #FAF6EE;  /* Subtle linen surface */
+  /* Pure Sage & Forest Palette Scale (Derived strictly from #516356 & #A7B8A2) */
+  --bg-app: #F3F6F4;          /* Fresh Pale Sage Mist - Zero Beige */
+  --bg-secondary: #E5ECE7;    /* Cool Sage Tint (Sidebar & secondary panels) */
+  --bg-card: #FFFFFF;         /* Crisp White Card Surface */
+  --bg-card-subtle: #EDF3EF;  /* Light Sage Card Subtle Surface */
   
-  --border-color: #D6CCBC;     /* Warm muted border */
-  --border-subtle: #E6DDCF;   /* Light linen border */
+  --border-color: #C3D2C7;     /* Clean Sage Border */
+  --border-subtle: #D9E4DC;   /* Soft Sage Divider */
   
   --primary: #516356;          /* Deep Forest Slate (#516356) */
-  --primary-hover: #415146;    /* Darker forest */
-  --primary-active: #323F36;   /* Deepest forest */
-  --primary-light: #EBF0EC;    /* Soft forest tint */
+  --primary-hover: #3E4D42;    /* Dark Forest Slate */
+  --primary-active: #2C3830;   /* Deepest Forest Slate */
+  --primary-light: #E4ECE6;    /* Light Forest Tint */
   
-  --accent-sage: #A7B8A2;      /* Sage Green (#A7B8A2) */
-  --accent-sage-light: #F1F5F0;/* Sage light tint */
-  --accent-sage-text: #374B3C; /* Sage high-contrast text */
+  --accent-sage: #A7B8A2;      /* Pure Sage Green (#A7B8A2) */
+  --accent-sage-light: #EDF3EF;/* Very Light Sage Tint */
+  --accent-sage-text: #2A362D; /* High-contrast Sage Text */
 
-  --accent-gold: #D9BF8F;      /* Soft Ochre Gold */
-  --accent-gold-bg: #FAF5EB;   /* Gold tint */
-  --accent-gold-text: #6E5425; /* Gold text */
+  --success: #516356;          /* Deep Forest Success */
+  --success-bg: #E8F0EA;       /* Sage Success Tint */
+  --success-text: #28372B;     /* Forest Success Text */
   
-  --success: #516356;          /* Deep Forest / Success indicator */
-  --success-bg: #EDF3EE;       /* Success Tint */
-  --success-text: #324937;     /* Success text */
-  
-  --danger: #A34839;           /* Warm Terracotta Brick Red */
-  --danger-bg: #FAF0EE;        /* Terracotta Tint */
-  --danger-text: #66251A;      /* Terracotta text */
+  --danger: #9E4536;           /* Muted Terracotta Red */
+  --danger-bg: #F8EFEF;        /* Terracotta Tint */
+  --danger-text: #612217;      /* Terracotta Text */
 
   /* Text hierarchy - STRICT NO BLACK */
   --text-heading: #516356;     /* Deep Forest Slate */
-  --text-main: #27332A;        /* Very Deep Slate Umber */
-  --text-muted: #57665B;       /* Muted Forest Slate */
-  --text-subtle: #809084;      /* Subtle Sage Slate */
+  --text-main: #222C25;        /* Deep Forest Umber (High Contrast) */
+  --text-muted: #4F5E53;       /* Muted Sage Slate */
+  --text-subtle: #758679;      /* Subtle Sage Slate */
 
   /* Typography */
   --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
   --font-serif: 'Fraunces', Georgia, serif;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(39, 51, 42, 0.05);
-  --shadow-md: 0 4px 12px rgba(39, 51, 42, 0.07);
-  --shadow-lg: 0 10px 25px rgba(39, 51, 42, 0.09);
-  --shadow-dropdown: 0 12px 32px rgba(39, 51, 42, 0.12);
+  --shadow-sm: 0 1px 3px rgba(34, 44, 37, 0.05);
+  --shadow-md: 0 4px 12px rgba(34, 44, 37, 0.07);
+  --shadow-lg: 0 10px 25px rgba(34, 44, 37, 0.09);
+  --shadow-dropdown: 0 12px 32px rgba(34, 44, 37, 0.12);
 
   /* Radius */
   --radius-sm: 6px;
@@ -144,7 +140,7 @@ input, select, textarea {
   background-color: var(--primary);
   color: #FFFFFF;
   border-color: var(--primary);
-  box-shadow: 0 1px 2px rgba(39, 51, 42, 0.1);
+  box-shadow: 0 1px 2px rgba(34, 44, 37, 0.1);
 
   &:hover:not(:disabled) {
     background-color: var(--primary-hover);
@@ -165,7 +161,7 @@ input, select, textarea {
   border-color: var(--border-color);
 
   &:hover:not(:disabled) {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-card-subtle);
     border-color: var(--accent-sage);
     color: var(--text-heading);
   }
@@ -186,7 +182,7 @@ input, select, textarea {
 .btn-danger {
   background-color: var(--danger-bg);
   color: var(--danger-text);
-  border-color: rgba(163, 72, 57, 0.3);
+  border-color: rgba(158, 69, 54, 0.3);
 
   &:hover:not(:disabled) {
     background-color: var(--danger);
@@ -226,17 +222,12 @@ input, select, textarea {
 .badge-sage {
   background-color: var(--accent-sage-light);
   color: var(--accent-sage-text);
-  border: 1px solid rgba(167, 184, 162, 0.5);
+  border: 1px solid var(--accent-sage);
 }
 
-.badge-gold {
-  background-color: var(--accent-gold-bg);
-  color: var(--accent-gold-text);
-  border: 1px solid rgba(217, 191, 143, 0.5);
-}
-
+.badge-gold,
 .badge-cream {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card-subtle);
   color: var(--text-heading);
   border: 1px solid var(--border-color);
 }
@@ -244,7 +235,7 @@ input, select, textarea {
 .badge-warm {
   background-color: var(--primary-light);
   color: var(--primary);
-  border: 1px solid rgba(81, 99, 86, 0.25);
+  border: 1px solid rgba(81, 99, 86, 0.3);
 }
 
 /* Cards */

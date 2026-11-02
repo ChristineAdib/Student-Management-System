@@ -251,7 +251,7 @@ import { CreateStudentRequest, UpdateStudentRequest } from '../../models/student
 
     .form-header {
       padding: 1.75rem 2rem;
-      background: linear-gradient(135deg, #FFFFFF 0%, #F7F2E8 100%);
+      background: linear-gradient(135deg, #FFFFFF 0%, #EDF3EF 100%);
       border-bottom: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
