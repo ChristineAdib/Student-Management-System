@@ -18,11 +18,12 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularDev", policy =>
     {
-        policy.WithOrigins(
-                "http://localhost:4200",
-                "http://127.0.0.1:4200",
-                "http://localhost:4201"
-            )
+        policy.SetIsOriginAllowed(origin => 
+            {
+                if (string.IsNullOrEmpty(origin)) return false;
+                var uri = new Uri(origin);
+                return uri.Host == "localhost" || uri.Host == "127.0.0.1";
+            })
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
@@ -61,20 +62,21 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-// Configure HTTP request pipeline.
-if (app.Environment.IsDevelopment() || true)
+// Swagger documentation
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Student Management API v1");
-        c.RoutePrefix = "swagger";
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Student Management API v1");
+    c.RoutePrefix = "swagger";
+});
 
-app.UseHttpsRedirection();
-
+// IMPORTANT: CORS must be placed before Routing/Authorization, and HttpsRedirection must NOT intercept HTTP dev preflight requests
 app.UseCors("AllowAngularDev");
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
 app.UseAuthorization();
 
